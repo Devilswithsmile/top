@@ -1,0 +1,16 @@
+.div-img{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+}
+img{
+    transition: transform .2s;
+    width:150px;
+    height:150px;
+    margin:0 auto;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+img:hover{
+    transform:scale(1.5);
+}
