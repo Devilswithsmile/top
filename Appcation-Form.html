@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
     <title>Application Form</title>
     <style>
-        h1{
-        font-family: "Honk", system-ui;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-        font-variation-settings:
-        "MORF" 15,
-        "SHLN" 50;
+        h1 {
+            font-family: "Honk", system-ui;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+                "MORF" 15,
+                "SHLN" 50;
         }
+
         body {
             background-image: url(https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGJhY2tncm91bmQlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D );
             text-align: center;
@@ -25,6 +27,7 @@
             margin: 0;
             padding: 0;
         }
+
         .popup {
             position: fixed;
             z-index: 1;
@@ -33,9 +36,9 @@
             width: 100%;
             height: 100%;
             overflow: auto;
-            opacity: ;
             display: none;
         }
+
         .popup-content {
             margin: 10% auto;
             padding: 20px;
@@ -44,21 +47,24 @@
             width: 30%;
             font-weight: bolder;
         }
+
         .popup-content button {
             display: block;
             margin: 0 auto;
         }
+
         .show {
             display: block;
         }
+
         h1 {
             color: green;
         }
 
         form {
-        font-family: "Protest Revolution", sans-serif;
-        font-weight: 400;
-        font-style: normal;
+            font-family: "Protest Revolution", sans-serif;
+            font-weight: 400;
+            font-style: normal;
         }
 
         form {
@@ -86,14 +92,16 @@
             margin-right: 10px;
         }
 
-        input, select {
+        input,
+        select {
             margin-bottom: 10px;
             padding: 5px;
             border: 1px solid #555;
             border-radius: 3px;
         }
 
-        input[type="checkbox"], input[type="radio"] {
+        input[type="checkbox"],
+        input[type="radio"] {
             margin-top: 5px;
         }
 
@@ -110,7 +118,8 @@
             cursor: pointer;
             border-radius: 5px;
         }
-        button{
+
+        button {
             background-color: red;
             color: white;
             border: none;
@@ -123,6 +132,7 @@
             cursor: pointer;
             border-radius: 5px;
         }
+
         input[type="reset"] {
             background-color: red;
             color: white;
@@ -136,66 +146,70 @@
             cursor: pointer;
             border-radius: 5px;
         }
+
         button:hover {
             background-color: greenyellow;
             color: black;
         }
+
         input[type="submit"]:hover {
             background-color: greenyellow;
             color: black;
         }
+
         input[type="reset"]:hover {
             background-color: greenyellow;
             color: black;
         }
     </style>
 </head>
+
 <body>
     <button id="myButton" type="button">Click me</button>
     <div id="myPopup" class="popup">
         <div class="popup-content">
             <form class="form">
                 <CENTER>
-                <h1>APPLICATION FORM</h1>
+                    <h1>APPLICATION FORM</h1>
                 </CENTER>
                 <fieldset>
-        
+
                     <label for="fname">First Name:</label>
                     <input type="text" id="fname" placeholder="Enter your first name" required><br>
-        
+
                     <label for="lname">Last Name:</label>
                     <input type="text" id="lname" placeholder="Enter your last name" required><br>
-        
+
                     <label for="email">Email:</label>
                     <input type="email" id="email" placeholder="Enter your email" required><br>
-        
+
                     <label for="password">Password:</label>
                     <input type="password" id="password" placeholder="Enter your password" required><br>
-        
+
                     <label for="status">Status:</label>
                     <label for="m">Married</label>
                     <input type="checkbox" id="m" name="m">
                     <label for="u">Unmarried</label>
                     <input type="checkbox" id="u" name="u"><br>
-        
+
                     <label for="gender">Gender:</label>
                     <label for="male">Male</label>
                     <input type="radio" id="male" name="gender">
                     <label for="female">Female</label>
                     <input type="radio" id="female" name="gender"><br>
-        
+
                     <label for="highSchoolName">High School Name:</label>
                     <input type="text" id="highSchoolName" required><br>
-        
+
                     <label for="cityName">City Name:</label>
                     <input type="text" id="cityName" required><br>
-        
+
                     <label for="graduateDate">Graduate Date:</label>
                     <input type="date" id="graduateDate"><br>
-        
+
                     <label for="project">Your Project:</label>
                     <input type="file" id="project"><br>
-        
+
                     <label for="course">Coding Language :</label>
                     <select id="course">
                         <option value="volvo">C</option>
@@ -206,16 +220,16 @@
                         <option value="saab">PYTHON</option>
                         <option value="opel">PHP</option>
                     </select><br>
-        
+
                     <label for="background">Background:</label>
                     <label for="non-it">Non-IT</label>
                     <input type="radio" id="non-it" name="fe">
                     <label for="it">IT</label>
                     <input type="radio" id="it" name="fe"><br>
                     <center>
-                    <input type="submit">
-                    <input type="reset">
-                        </center>
+                        <input type="submit">
+                        <input type="reset">
+                    </center>
                 </fieldset>
             </form>
             <button id="closePopup">Close</button>
@@ -235,4 +249,5 @@
         });
     </script>
 </body>
+
 </html>
